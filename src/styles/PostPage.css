@@ -58,3 +58,17 @@
 .comment {
   margin-left: 20px;
 }
+
+.bold{
+  font-weight: bold;
+ 
+}
+
+.larger{
+  font-weight: bold;
+  font-size: 150%;
+}
+
+.ltr{
+  display: flex;
+}
