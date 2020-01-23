@@ -1,14 +1,13 @@
 import React from "react";
 import "../styles/styles.css";
-import redditlogo from './Reddit_logo.png';
 
 export default function Navbar() {
   return (
-    <div className="NavBar">
+    <div className="Navbar">
       <h1 id="heading">
-        <img src={redditlogo} alt = "redditlogo"/>
+        <img id="logo" src="https://pbs.twimg.com/profile_images/1197561676393926656/KUZlGyLX_400x400.jpg" />
+        reddit
       </h1>
-      <input type="text" className="SearchBar" placeholder="Search Reddit" />
     </div>
   );
 }

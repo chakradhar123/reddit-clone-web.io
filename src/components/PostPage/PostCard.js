@@ -1,6 +1,6 @@
 import React from "react";
 import "../../styles/PostPage.css";
-import { Comment } from "../SubReddit/Comment";
+import { Comment } from "./Comment";
 import {VoteCounter} from "../VoteCounter"
 
 export default class PostCard extends React.Component {

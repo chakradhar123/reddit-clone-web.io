@@ -1,5 +1,5 @@
 import React from "react";
-import '../styles/styles.css'
+import '../styles/PostPage.css'
 
 export const VoteCounter = () => {
   return (

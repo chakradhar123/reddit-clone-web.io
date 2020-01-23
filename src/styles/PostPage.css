@@ -72,3 +72,29 @@
 .ltr{
   display: flex;
 }
+.votes {
+  background-color: white ;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: center;
+  padding: 5px;
+}
+
+.votes p {
+  margin: 0;
+}
+
+.votes img {
+  height: 10px;
+  padding: 5px;
+  text-align: center;
+}
+.upvote:hover {
+  background-color: green;
+  border-radius: 50%;
+}
+.downvote:hover {
+  background-color: red;
+  border-radius: 50%;
+}

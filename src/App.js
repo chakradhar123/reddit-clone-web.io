@@ -1,31 +1,31 @@
-import React from "react";
+import React,{} from "react";
 import Navbar from "./components/Navbar";
-import Post from "./components/Post";
-import PostCard from "./components/SubReddit/PostCard";
-import SubInfo from "./components/SubReddit/SubInfo";
+import PostList from "./components/PostPage/PostPage"
+import SubReddit from "./components/SubRedditPage/SubReddit"
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+} from "react-router-dom";
+
 import "./styles/styles.css";
 
 export default function App() {
   return (
     <div className="App">
       <Navbar />
-      {/* <div className="Post-List">
-        <Post />
-        <Post />
-        <Post />
-        <Post />
-      </div> */}
+      <Router>
 
-      <div className="post-wrapper">
-        <div className="column-1">
-          <PostCard />
-        </div>
+        <Switch>
+          <Route exact path="/" >
+            <SubReddit/>
+          </Route>
+          <Route exact path="/post" >
+            <PostList/>
+          </Route>
+        </Switch>
+      </Router>
 
-        <div className="column-2">
-          <SubInfo />
-          <SubInfo />
-        </div>
-      </div>
     </div>
   );
 }
