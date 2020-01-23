@@ -36,10 +36,10 @@ export default class PostCard extends React.Component {
           remaining essentially unchanged.
         </p>
         <hr />
-        <Comment />
-        <Comment />
-        <Comment />
-        <Comment />
+        <Comment body = "Sawyer, you're going out a youngster, but you've got to come back a star!" username = "tommysaw" hours = "5" subcomment = {[{username:"desertson", hours: "4", body:"Well, here's another nice mess you've gotten me into!" }]}/>
+        <Comment body = "You've got to ask yourself one question: 'Do I feel lucky?' Well, do ya, punk?" username = "70srock" hours = "5" subcomment = {[{username:"scarface", hours: "3", body:"Say hello to my little friend!", subcomment:[{username:"swigert13", hours:"1", body:"Houston, we have a problem."}] },{username:"deadpoet", hours: "3", body:"Carpe diem. Seize the day, boys. Make your lives extraordinary." }]}/>
+        <Comment body = "I want to be alone." username = "grandhotel" hours = "5" subcomment = {[]}/>
+        <Comment body = "You're gonna need a bigger boat." username = "jawguy85" hours = "5" subcomment = {[]}/>
       </div>
       </div>
       </div>

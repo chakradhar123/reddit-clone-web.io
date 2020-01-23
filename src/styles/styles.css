@@ -101,3 +101,18 @@ body {
 .commentbody{
   margin: 5px;
 }
+
+.comment{
+  transform: translate(15px);
+}
+
+.redditline{
+  border-left: 1px solid black;
+  transform: translate(13px);
+}
+
+.line{
+  width: 2px;
+  border-color: black;
+  border-right: 2px solid black;
+}
