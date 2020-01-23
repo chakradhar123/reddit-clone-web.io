@@ -14,11 +14,11 @@ body {
   background: white;
   font-size: 30px;
 }
-#heading img {
+#logo {
   height: 25px;
   border-radius: 50%;
 }
-#post-head {
+.post-head {
   text-align: left;
   margin: 2% 5%;
   width: 50%;
