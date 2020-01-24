@@ -35,7 +35,7 @@ body {
   align-items: flex-start;
 }
 .post {
- width: 80%;
+ width: 85%;
   
   display: flex;
   margin: 2%;
@@ -94,6 +94,7 @@ body {
 }
 .comment-head {
   text-align: left;
+    align-self: flex-end;
   margin-right: 10px;;
   font-size: 13px;
   color: grey;
