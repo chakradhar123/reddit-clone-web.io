@@ -100,7 +100,7 @@ body {
   color: grey;
 }
 .sub-info {
-  min-height: 70vh;
+  height: 300px;
   min-width: 30%;
   border-radius: 3px;
   background-color: white;
