@@ -18,7 +18,7 @@ export default function App() {
 
       <div className="post-wrapper">
         <div className="column-1">
-          <PostCard />
+          <PostCard key = "test"/>
         </div>
 
         <div className="column-2">

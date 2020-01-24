@@ -8,6 +8,10 @@ body {
   background-color: #dae0e6;
 }
 
+.score{
+  font-size: 75%;
+}
+
 #heading {
   margin: 0;
   text-align: left;
@@ -103,7 +107,9 @@ body {
 }
 
 .comment{
-  transform: translate(15px);
+  transform: translate(10px);
+  width: 95%;
+  margin: 10px;
 }
 
 .redditline{
@@ -115,4 +121,8 @@ body {
   width: 2px;
   border-color: black;
   border-right: 2px solid black;
+}
+
+.slightmargin{
+  margin-top: 5px;
 }
