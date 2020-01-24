@@ -113,8 +113,8 @@ body {
 }
 
 .redditline{
-  border-left: 1px solid black;
-  transform: translate(13px);
+  transform: translate(17px);
+  border-left: 2px solid black;
 }
 
 .line{
@@ -125,4 +125,8 @@ body {
 
 .slightmargin{
   margin-top: 5px;
+}
+
+.margin-right{
+  margin-right: 5px;
 }

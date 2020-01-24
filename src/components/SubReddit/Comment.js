@@ -18,9 +18,9 @@ class Comment extends Component{
     return (
       <div className="comment">
         <div className = "ltr">
-        <div>
+
+        <div className = "margin-right">
         <VoteCounter votes = {this.state.votes}/>
-        <div className = "line"></div>
         </div>
 
         <div className = "slightmargin">
@@ -34,7 +34,7 @@ class Comment extends Component{
             <div>{
                 this.state.subcomment.map(
                   function(val, ind){
-                    return <Comment key = {val.data.id} votes = {val.data.score} username = {val.data.author} hours = "x" body = {val.data.body} 
+                    return <Comment key = {val.data.id} votes = {val.data.score>1000? `${(val.data.score/1000).toFixed(1)}k`: val.data.score} username = {val.data.author} hours = "x" body = {val.data.body} 
                       subcomment = {val.data.replies?val.data.replies.data.children:[]}
                     /> 
                   }

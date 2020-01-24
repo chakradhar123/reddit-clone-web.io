@@ -45,20 +45,26 @@ export default class PostCard extends React.Component {
       
       <div className="card-wrapper">
         <div className = "ltr">
-        <VoteCounter />
+        <div>
+          <VoteCounter votes={this.state.postData.score>1000? `${(this.state.postData.score/1000).toFixed(1)}k`: this.state.postData.score} />
+          <div className = "verticalLine">
+          </div>
+        </div>
         <div className = "wrapstuff">
-          <span className = "bold">{this.state.postData.subreddit_name_prefixed} . </span>
-          <span>Posted by u/{this.state.postData.author} X hours ago </span>
+          <small><span className = "bold">{this.state.postData.subreddit_name_prefixed} . </span>
+          <span>Posted by u/{this.state.postData.author} X hours ago </span> </small>
           <h3 className = "larger">{this.state.postData.title}</h3>
           <div className = "wrapstuff">{this.state.postData.selftext}</div>
+          
           <hr />
+          Comments
           <div>
           {
             this.state.commentData.map(function(
               val, ind
             ){
               return (<div>
-              <Comment key = {val.data.id} votes = {val.data.score} body = {val.data.body} username = {val.data.author} hours = "x" subcomment = {val.data.replies? val.data.replies.data.children:[]} />
+              <Comment key = {val.data.id} votes = {val.data.score>1000? `${(val.data.score/1000).toFixed(1)}k`: val.data.score} body = {val.data.body} username = {val.data.author} hours = "x" subcomment = {val.data.replies? val.data.replies.data.children:[]} />
               </div>)
             })
           }</div>
